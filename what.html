@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>AIGA Design Conference</title>
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+	
+		<!--font-->
+        <!--<link rel="stylesheet" href="font/stylesheet.css" type="text/css">--> 
+        <script src="https://use.fontawesome.com/f5e465ea94.js"></script>
+        
+        <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<!--<script>$(function() { alert('hello') });</script>-->
+
+<script>
+		
+		$(document).ready(function() {
+		 
+       
+        $('#jquery-carousel .next a').on("click", function(e) {
+            e.preventDefault();
+			
+            var currentSlide = $('#jquery-carousel li.active');
+            var nextSlide = $('#jquery-carousel li.active').next(); 
+           
+            currentSlide.removeClass('active');
+           
+            if (nextSlide.length === 0 ) {
+              nextSlide = $('#jquery-carousel li').first();
+            }
+            nextSlide.addClass('active');
+        });
+        
+        $('#jquery-carousel .prev a').on("click", function(e) {
+            e.preventDefault();
+            var currentSlide = $('#jquery-carousel li.active');
+            var prevSlide = $('#jquery-carousel li.active').prev();
+            
+            currentSlide.removeClass('active');
+            
+            if (prevSlide.length === 0 ) {
+              prevSlide = $('#jquery-carousel li').last();
+            }
+            prevSlide.addClass('active');
+        });
+		moveSlide();
+     });
+	 /*function moveSlide(){
+		$(".next a").click();
+		setTimeout(moveSlide, 3000);
+		}*/
+	   </script>
+
+    </head>
+
+    <body class="clearfix">
+        
+        <a href="index.html" class="mobile mobile_logo">
+                <div id="logo_interactive_mobile">
+                    <span class="logo_large_text">re</span>
+                    <div>
+                        <div id="green_text_group">
+                            <span class="logo_green_text">THINK<br>
+                            DESIGN</span><br>
+                        </div>
+                    <span class="logo_small_text">AIGA Design Conference</span></div>
+                </div>
+                </a>
+		
+		
+            <ul class="nav">
+                <li><a href="who.html">WHO</a></li>
+                <li><a href="what.html">WHAT</a></li>
+                <li><a href="where.html">WHERE</a></li>
+                <a href="index.html">
+                    <div id="logo_interactive">
+                    <span class="logo_large_text">re</span>
+                    <div>
+                        <div id="green_text_group">
+                            <span class="logo_green_text">THINK<br>
+                            DESIGN</span><br>
+                        </div>
+                    <span class="logo_small_text">AIGA Design Conference</span></div>
+                    </div>
+                </a>
+                <li><a href="when.html">WHEN</a></li>
+                <li><a href="why.html">WHY</a></li>
+                <li><a href="how.html">HOW</a></li>
+            
+            </ul>
+            
+            <div class="description"><p>The 2018 AIGA Design Conference is put on specifically for design educators that want a chance to learn, network, stay current and enjoy the San Luis Obispo area.</p></div>
+            
+            <div class="header_text what_header_text">
+                <h1>WHAT</h1>
+            </div>
+            <img class="header_image" src="images/trees.png">
+        
+            <div class="arrow"><a href="#purpose"><i class="fa fa-angle-down" aria-hidden="true"></i></a></div>
+        
+            <!--content div contains everything below the fold-->
+        
+            <div class="content" id="what">
+                
+                <div class="interior_header" id="what_top">
+                    <h3 id="purpose">Our Purpose  </h3>
+                    <hr>
+                </div>
+                
+                <div class="our_purpose_description">
+                    <img src="images/what_our_purpose.png" alt="group of people collaborating at a table">
+                    <div>
+                    <h3>AIGA brings design to the world, and the world to designers</h3>
+                        
+                    <p>As the profession’s oldest and largest professional membership organization for design—with 70 chapters and more than 25,000 members—we advance design as a professional craft, strategic advantage, and vital cultural force. From content that defines the global practice to events that connect and catalyze, we work to enhance the value and deepen the impact of design across all disciplines on business, society, and our collective future.</p>
+                    </div>
+                
+                </div>
+                
+                <div class="interior_header" >
+                    <h3>Our History </h3>
+                    <hr>
+                </div>
+                <img class="timeline_graphic" src="images/timeline_graphic.png" alt="timeline" usemap="timeline">
+                <div id="jquery-carousel">
+                    
+                <map name="timeline">
+                    <area shape="circle" coords="13,60,15" href="" alt="2013">
+                    <area shape="circle" coords="246,60,15" href="images/item-2.jpg" alt="2014">
+                    <area shape="circle" coords="484,60,15" href="images/item-3.jpg" alt="2015">
+                    <area shape="circle" coords="711,60,15" href="images/item-4.jpg" alt="2016">
+                    <area shape="circle" coords="943,60,15" href="images/item-5.jpg" alt="2017">
+                </map>
+                        
+		              <div class="prev"><a href=""><i class="fa fa-arrow-left" aria-hidden="true"></i></a></div>
+	                   <ul>
+                            
+            
+                           <li class="active">
+                              <a href="images/item-1.jpg"><img src="images/item-1.jpg"></a>
+                               <div class="photo_description">
+                                   <h3 class="what_year">
+                                2013 Design Educator's Conference&#58; <br>Blunt, Explicit and Graphic Design Criticism Now</h3>
+                                   <p class="caption">
+                                    In April 2013, the AIGA Design Educators Community met in Norfolk, Virginia for "Blunt: Explicit and Graphic Design Criticism Now" to address the discourse of criticism in design, critique aspects of graphic design practice, and present or propose methods of critical thought.</p></div>
+                            </li>
+                        
+                           <li >
+                              <a href="images/item-2.jpg"><img src="images/item-2.jpg"></a><br>
+                               <div class="photo_description">
+                                   <h3 class="what_year">
+                               2014 Design Educator's Conference:<br> New Ventures</h3>
+                                   <p class="caption">The purpose of this conference, held in Portland, OR on September 11-13, 2014, was to propel design educators and students to rethink what types of experiences best serve a design education in the 21st century. From the creation of new types of graduate programs to the physical creation of design think tanks and venture accelerator programs on campuses, a new landscape of collaboration, intersection and adventure is quickly emerging.</p></div>
+                            </li>
+                           
+                           <li >
+                              <a href="images/item-3.jpg"><img src="images/item-3.jpg"></a><br>
+                               <div class="photo_description">
+                                   <h3 class="what_year"> 2015 Design Educator's Conference:  <br>Spaces of Learning</h3>  
+                                   <p class="caption">The conference explored the idea that graphic design education is rapidly evolving: the social spaces we work in, and the practices of teaching and learning we engage with, are themselves mediated by larger contexts of social, cultural, political and technological change.</p></div>
+                            </li>
+                           
+                           <li >
+                              <a href="images/item-4.jpg"><img src="images/item-4.jpg"></a><br>
+                               <div class="photo_description">
+                                   <h3 class="what_year">
+                               2016 Design Educator's Conference: <br>Nuts&#43;Bolts</h3>
+                                   <p class="caption">The Nuts&#43;Bolts conference was framed as a context for educators to demystify academia&#59; clarifying teaching methods, assessment, and relevant project ideas specific to the field of graphic design. What was intended as a pragmatic conference turned into a rich discussion about our identity and values.</p></div>
+                            </li>
+                           
+                           <li >
+                              <a href="images/item-5.jpg"><img src="images/item-5.jpg"></a><br>
+                               <div class="photo_description">
+                                   <h3 class="what_year">2017
+                               2017 Design Educator's Conference: <br>Converge</h3>
+                                   <p class="caption">This conference encourages design educators, design researchers, and designers to take advantage of opportunities in digital scholarship, learn how to collaborate on interdisciplinary projects, and find new intersections within their existing research trajectories. This will help us to work together to redefine what it means to be a designer and a design researcher today.</p></div>
+                            </li>
+		                  
+	                   </ul>
+	               <div class="next"><a href=""><i class="fa fa-arrow-right" aria-hidden="true"></i></a></div>
+	           </div>
+                
+                <div class="interior_header">
+                    <h3>Past Speakers </h3>
+                    <hr>
+                </div>
+                
+                <table class="past_speakers">
+                    <th></th>
+                    <tr>
+                        <td>
+                            <p class="bold">Sarah Ahrens</p>
+                            <p>Finance Manager</p>
+                        </td>
+                         <td>
+                            <p class="bold">Albert Brennan</p>
+                            <p>Professor of Industrial and Interaction Design</p>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <p class="bold">Sean Adams</p>
+                            <p>Art Center College of Design Professor</p>
+                        </td>
+                         <td>
+                            <p class="bold">Alicia Combs</p>
+                            <p>Art Center College of Design Professor</p>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <p class="bold">Keira Alexandra</p>
+                            <p>Co-heads Work - Order Design Partnership</p>
+                        </td>
+                         <td>
+                            <p class="bold">Vincent Price</p>
+                            <p>General Services Administrator</p>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>
+                            <p class="bold">Reza Ali</p>
+                            <p>Design Engineer</p>
+                        </td>
+                         <td>
+                            <p class="bold">Alina De Los Torres</p>
+                            <p>Chief Technology Officer</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="bold">Nick Bazarian</p>
+                            <p>X - Rite Pantone Project Manager</p>
+                        </td>
+                         <td>
+                            <p class="bold">Amir Pandaya</p>
+                            <p>Director of Machine Intelligence at Autodesk</p>
+                        </td>
+                    </tr>
+                    
+                
+                </table>
+                
+            
+        
+            <footer class="clearfix">
+                <div class="footer_content"> 
+                    <p>2017. ReThink Design, AIGA. All Rights Reserved.</p> 
+                    <a href="#contact.html">Contact</a>
+                    <a href="#terms.html">Terms</a>
+                     <a href="https://www.eiseverywhere.com/ereg/imis.php?eventid=203261&t=eventid=203261&">Register</a>
+                    <a href="https://www.facebook.com/AIGASB/l"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/AIGAdesign?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/aigadesign/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/company/aiga"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    <a href="https://www.youtube.com/user/AIGAdesign"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+                </div>
+                <img src="images/footer.png">
+            </footer>
+            
+        </div>
+        
+        
+    </body>
+</html>

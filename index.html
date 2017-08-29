@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <script src="https://use.fontawesome.com/f5e465ea94.js"></script>
+    
+    <style>
+        
+        /* following is for computer screen*/
+        @media only screen and (min-width:651px) {
+    
+        .parallax {
+            perspective: 1px;
+            height: 200vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            margin-top: -250px;
+        }    
+        .parallax::-webkit-scrollbar { width: 0 !important }
+
+        .parallax__layer {
+            position: absolute;
+            top: 100px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+}
+
+        .learn_more {
+            border: 3px solid black;
+            display: block;
+            margin: auto;
+            width: 150px;
+            height: 30px;
+            padding: 5px;
+            margin-top: 40px;
+            color: black;
+            text-decoration: none;
+            font-family: 'tofino_personalbook';
+            font-size: 20px;
+            position: relative;
+            z-index: 13;
+            
+            }
+            
+     .learn_more:hover {
+           background-color: #FFCE07;
+            color: white;
+            border: 3px solid #FFCE07;
+            
+            }
+    
+    * {
+    margin:0;
+    padding:0;
+  }
+
+  body {
+    
+    background-image: url(images/water_parallax.png);
+    background-repeat: repeat-x;
+    background-color: #F5FFF6;
+    margin: auto;
+      
+  }
+
+
+   /* add some padding to force scrollbars */
+  .parallax__layer {
+    padding: 100vh 0;
+  }
+
+   /* centre the content in the parallax layers */
+  .title {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+    
+   
+/*translateZ controls how fast the image goes, scale controls how large. The speed impacts the size as well*/
+        
+
+    .parallax__layer--back {
+  transform: translateZ(-1.1px) scale(2.1);
+        
+}
+    
+    .parallax__layer--middleback {
+  transform: translateZ(-1.3px) scale(1.9);
+        top: 350px;
+        
+}
+   
+    .parallax__layer--middle {
+  transform: translateZ(-0.6px) scale(1.2);
+}
+   
+    .parallax__layer--middlebase {
+  transform: translateZ(-1.8px) scale(2.8);
+}
+        
+        .parallax__layer--base {
+  transform: translateZ(2.2px) scale(1.0);
+}
+   
+   
+        .logo {
+            transform: translateZ(0px) scale(3);
+            top: 500px;
+            position: fixed;
+    }
+        .white {
+           position: fixed;
+            z-index: 3;
+            margin-top: -120px;
+            padding-top: 100px;
+            width: 100%;
+            height: 850px;
+            background-color: white;
+            margin-bottom: -1000px;  
+        }
+        
+        .page2 {
+            width: 100%;
+        
+    }
+    
+        .footer {
+            
+            position: relative;
+            z-index: 4;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            bottom: 0px;
+        }
+            
+          
+        
+        .home_large_text {
+            text-align: center;
+            margin:auto;
+        }
+            
+            h2 {
+                font-family: 'tofino_personal_regularRg';
+                font-size: 40px;
+            }
+        
+        .yellow {
+            color: #FFCE07;
+        }
+        
+        .blue {
+            color: #1B5F68;
+        }
+        
+        .arrow_home {
+            color: black;
+            width: 100%;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            margin-top: -50px;
+}
+
+        .arrow_home a i {
+            font-size: 60px;
+            color: black;
+            text-shadow: 0px 0px 20px #fff;
+}
+
+        .arrow_home a i:hover {
+            color: #1F8C75;
+}
+   
+        
+        .nav {
+            position: relative;
+            z-index: 2;
+        }
+    }
+        
+        
+        
+        /*following is for tablet screens*/
+        @media only screen and (min-width:481px) and (max-width:650px) {
+                .
+        
+            
+            
+            .nav {
+                position: relative;
+                z-index: 10;
+                margin-left: 40px;
+            }
+            
+            img {
+                max-width: 650px;
+            }
+        
+            
+        
+           
+            .home_large_text {
+            text-align: center;
+            margin:auto;
+            
+            margin-top: 100px;
+        }
+           
+            p {
+                line-height: .7em;
+            }
+            h2 {
+                font-family: 'tofino_personal_regularRg';
+                font-size: 20px;
+                line-height: .2em;
+            }
+            
+            h1 {
+                line-height: .4em;
+            }
+        
+        .yellow {
+            line-height: .9em;
+            color: #FFCE07;
+        }
+        
+        .blue {
+            color: #1B5F68;
+            
+        }
+            
+            body {
+    
+            background-image: url(images/water_parallax.png);
+            background-repeat: repeat-y;
+            background-position: top;
+            margin: auto;
+            }
+                
+            .arrow_home {
+                display: none;    
+                }
+            
+            .title {
+                display: none;
+            }
+            
+           .description_home{ display:none;} 
+            
+            .footer img {
+                margin-bottom: -250px;
+                width: 100%;
+                
+            }
+        
+            
+            .learn_more {
+                margin: auto;
+            border: 2px solid black;
+            display: block;
+            width: 100px;
+            height: 20px;
+            padding: 5px;
+            margin-top: 10px;
+            color: black;
+            text-decoration: none;
+            font-family: 'tofino_personalbook';
+            font-size: 12px;
+            
+            }
+            
+     .learn_more:hover {
+           background-color: #FFCE07;
+            color: white;
+            border: 3px solid #FFCE07;
+            
+            }
+        }
+        
+        
+        
+        /*following is for mobile screen*/
+        @media only screen and (max-width:480px) {
+            
+            .footer img {
+                margin-bottom: -200px;
+                width: 100%;
+                
+            }
+            
+            
+            .parallax {
+                display: none;
+            }
+            
+            
+            .nav {
+                position: relative;
+                z-index: 10;
+                margin-left: 40px;
+            }
+            
+            img {
+                max-width: 480px;
+            }
+        
+            
+        
+            .home_large_text {
+                display: none;
+            }
+            
+            body {
+                
+            background-image: url(images/water_parallax.png);
+            background-repeat: repeat-y;
+                background-position: top;
+            margin: auto;
+            height: 760px;
+            }
+                
+            .arrow_home {
+                display: none;    
+                }
+            .title {
+                display: none;
+            }
+            
+            .description_home{ display:none;}
+            
+        
+ 
+    /*   (1 + (translateZ * -1) / perspective)    */
+
+</style>
+</head>
+<body>
+    
+    <a href="index.html" class="mobile mobile_logo">
+                <div id="logo_interactive_mobile">
+                    <span class="logo_large_text">re</span>
+                    <div>
+                        <div id="green_text_group">
+                            <span class="logo_green_text">THINK<br>
+                            DESIGN</span><br>
+                        </div>
+                    <span class="logo_small_text">AIGA Design Conference</span></div>
+                </div>
+                </a>
+    
+    <ul class="nav">
+                <li><a href="who.html">WHO</a></li>
+                <li><a href="what.html">WHAT</a></li>
+                <li><a href="where.html">WHERE</a></li>
+                <a href="index.html">
+                    <div id="logo_interactive">
+                    <span class="logo_large_text">re</span>
+                    <div>
+                        <div id="green_text_group">
+                            <span class="logo_green_text">THINK<br>
+                            DESIGN</span><br>
+                        </div>
+                    <span class="logo_small_text">AIGA Design Conference</span></div>
+                    </div>
+                </a>
+                <li><a href="when.html">WHEN</a></li>
+                <li><a href="why.html">WHY</a></li>
+                <li><a href="how.html">HOW</a></li>
+            </ul>
+            
+            <div class="description_home"><p>The 2018 AIGA Design Conference is put on specifically for design educators that want a chance to learn, network, stay current and enjoy the San Luis Obispo area.</p></div>
+    
+    <div class="arrow_home"><a href="#middle_of_page"><i class="fa fa-angle-down" aria-hidden="true"></i></a></div>
+    
+    
+
+<div class="parallax">
+    
+    
+    
+  <div class="parallax__layer parallax__layer--back">
+      <div class="title"><img src="images/mountains_parallax.png"></div>
+  </div>
+    
+    <div class="parallax__layer parallax__layer--middleback">
+      <div class="title"><img src="images/backhills_parallax.png"></div>
+  </div>
+    <div class="parallax__layer parallax__layer--middle">
+      <div class="title"><img src="images/clouds_parallax.png"></div>
+  </div>
+    <div class="parallax__layer parallax__layer--middlebase">
+    <div class="title"><img src="images/fronthills_parallax.png"></div>
+    <div class="white">
+            <div class="home_large_text">
+                <p > AIGA SANTA BARBARA CHAPTER</p>
+                <p> 2018 Design Educators Conference</p>
+                <h2 class="yellow">SAN LUIS OBISPO</h2>
+                <h1 class="blue">JULY 21</h1>
+                <h2 class="blue" id="middle_of_page">THROUGH</h2>
+                <h1 class="blue">JULY 22</h1>
+                <p >Creativity thrives in the 805</p>
+                <a class="learn_more" href="what.html">Learn More</a>
+                <a href="https://www.eiseverywhere.com/ereg/imis.php?eventid=203261&t=eventid=203261&" class="learn_more" href="what.html">Register</a>
+                
+            </div>
+        
+        </div>
+  </div>
+  <!--<div class="parallax__layer parallax__layer--base">
+    <div class="title"><img src="images/logo.png"></div>
+  </div>-->
+    
+    </div>
+    
+    <!--had to change from footer tag to div class="footer" tag in order to modify footer for home page to work with parallax-->
+    
+    <div class="footer clearfix">
+                <div class="footer_content"> 
+                    <p>2017. ReThink Design, AIGA. All Rights Reserved.</p> 
+                    <a href="#contact.html">Contact</a>
+                    <a href="#terms.html">Terms</a>
+                    <a href="https://www.eiseverywhere.com/ereg/imis.php?eventid=203261&t=eventid=203261&">Register</a>
+                    <a href="https://www.facebook.com/AIGASB/l"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/AIGAdesign?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/aigadesign/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/company/aiga"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    <a href="https://www.youtube.com/user/AIGAdesign"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+                </div>
+                <img src="images/home_clouds.png">
+            </div>
+
+</body>
+</html>
